@@ -1,0 +1,3 @@
+<app-content-card *ngFor ="let contentIndividual of contentList; last as isLast" [content]="contentIndividual" [class.is-last] = "isLast">
+    {{ contentIndividual }}
+</app-content-card>

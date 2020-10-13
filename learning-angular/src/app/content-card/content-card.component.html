@@ -1,3 +1,21 @@
-<div [innerHTML]="showHtml">
-
+<div class="card">
+    <div class="left">
+        <img src="{{content.imgUrl}}" (click)=imageWasClicked(content.id) >
+        <p class="type" *ngIf="content.type">
+            Type: {{ content.type }}
+        </p>
+    </div>
+    <div class="right">
+        <h1 class="title">
+            {{ content.title }}
+        </h1>
+        <p class="body" *ngIf="content.body">
+            {{ content.body }}
+        </p>
+        <p class="tags" *ngIf="content.tags">
+            Tags: {{ content.tags }}
+        </p>
+        
+    </div>
+    <p class="clear"></p>
 </div>

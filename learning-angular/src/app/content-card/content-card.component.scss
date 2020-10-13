@@ -1,0 +1,37 @@
+:host{
+    border: 3px dashed #000000;
+    width: 900px;
+    display: block;
+    margin: 10px auto;
+}
+
+:host.is-last{
+    border: solid black 2px;
+    
+}
+.left, .right{
+    display: inline-block;
+    width: 45%;
+    position: relative;
+    padding: 10px 15px;
+}
+
+.title{
+    text-align: center;
+}
+.tags{
+    text-align: center;
+}
+
+.type{
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+}
+
+.card{
+    // clear: both;
+}
+
