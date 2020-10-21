@@ -5,7 +5,12 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
+    "test": "ng test", 
+
+    
+    "gc": "ng generate component", 
+    "gp": "ng g pipe",
+    "gd": "ng g directive",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
