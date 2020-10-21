@@ -1,3 +1,5 @@
+<input #titleSearch placeholder="search by title">
+<button (click) = "performSearch(titleSearch.value)">Search</button>
 <app-content-card *ngFor ="let contentIndividual of (contentList | contentTypeEquals:'Canadian News'); last as isLast" class="item-{{contentIndividual.type}}" [content]="contentIndividual" [class.is-last] = "isLast">
     {{ contentIndividual }}
 </app-content-card>

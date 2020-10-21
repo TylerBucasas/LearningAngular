@@ -8,6 +8,15 @@ import { Content } from '../helper-files/content-interface';
 })
 export class ContentListComponent implements OnInit {
   contentList: Content[];
+  
+  performSearch(string : String) {
+    for(let i= 0; i < this.contentList.length; i++){
+      if(this.contentList[i].title.toLowerCase() === string.toLowerCase()){
+        alert("Content with title '"+string+"' exists")
+      }
+    }
+  }
+
   constructor() { 
 
     this.contentList = [
