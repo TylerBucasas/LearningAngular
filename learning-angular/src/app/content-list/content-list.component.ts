@@ -12,7 +12,11 @@ export class ContentListComponent implements OnInit {
   performSearch(string : String) {
     for(let i= 0; i < this.contentList.length; i++){
       if(this.contentList[i].title.toLowerCase() === string.toLowerCase()){
-        alert("Content with title '"+string+"' exists")
+        this.contentList[i].found=true;
+        console.log("title " + string + " exists");
+      }else{
+        this.contentList[i].found=false;
+
       }
     }
   }

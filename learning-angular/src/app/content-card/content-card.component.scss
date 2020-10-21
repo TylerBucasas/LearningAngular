@@ -13,6 +13,9 @@
 :host.item-International{
     border: 3px solid greenyellow;
 }
+:host.found_true{
+    background-color: hotpink;
+}
 .left, .right{
     display: inline-block;
     width: 45%;
