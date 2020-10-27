@@ -38,7 +38,7 @@ export class ContentListComponent implements OnInit {
       {
         id: 1,
         author: 'Jimmy',
-        imgUrl: 'https://media.istockphoto.com/photos/portrait-of-albanian-man-with-traditional-clothes-riding-a-horse-in-picture-id1269774486',
+        // imgUrl: 'https://media.istockphoto.com/photos/portrait-of-albanian-man-with-traditional-clothes-riding-a-horse-in-picture-id1269774486',
         tags: ['albania', 'steve jobs', 'programming'],
         title: 'Jimmy',
         body: 'Aenean venenatis egestas nulla, id convallis magna faucibus ac. Praesent faucibus facilisis odio, nec euismod nisi imperdiet sed. Duis varius pellentesque tellus, in lacinia sem viverra ac. Praesent congue nibh libero, sed tempor felis pulvinar ac. Vestibulum placerat mauris eget mattis tristique. Nullam elementum vitae sapien eu malesuada. Nam interdum tellus vitae mattis aliquet. Nullam efficitur rhoncus massa congue mattis. Etiam ornare massa eget nisl gravida, at aliquet libero posuere. Suspendisse a mollis neque. In hac habitasse platea dictumst. Phasellus a sem at risus eleifend accumsan et imperdiet neque. Donec eget ultricies lacus. Etiam et blandit augue. Etiam sollicitudin at neque nec imperdiet.',
