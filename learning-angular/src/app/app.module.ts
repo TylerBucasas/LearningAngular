@@ -8,6 +8,7 @@ import { ContentTypeEqualsPipe } from './content-type-equals.pipe';
 import { FormsModule } from '@angular/forms';
 import { FindContentWithTitlePipe } from './find-content-with-title.pipe';
 import { HoverStyleDirective } from './hover-style.directive';
+import { HoverCardDirective } from './hover-card.directive';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HoverStyleDirective } from './hover-style.directive';
     ContentListComponent,
     ContentTypeEqualsPipe,
     FindContentWithTitlePipe,
-    HoverStyleDirective
+    HoverStyleDirective,
+    HoverCardDirective
   ],
   imports: [
     BrowserModule,

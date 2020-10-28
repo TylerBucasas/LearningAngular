@@ -1,9 +1,7 @@
 <input #titleSearch placeholder="search by title">
 <button (click) = "performSearch(titleSearch.value)">Search</button>
-<app-content-card *ngFor ="let contentIndividual of (contentList | contentTypeEquals:'Canadian News');" class="item-{{contentIndividual.type}} found_{{contentIndividual.found}}" [content]="contentIndividual">
+<app-content-card *ngFor ="let contentIndividual of (contentList); first as isFirst; last as isLast" appHoverCard [firstOrLast] = "isFirst || isLast"  class="item-{{contentIndividual.type}} found_{{contentIndividual.found}}" [content]="contentIndividual">
     {{ contentIndividual }}
 </app-content-card>
 
-<app-content-card *ngFor ="let contentIndividual of (contentList | contentTypeEquals:'International News');" class="item-{{contentIndividual.type}} found_{{contentIndividual.found}}" [content]="contentIndividual">
-    {{ contentIndividual }}
-</app-content-card>
+
