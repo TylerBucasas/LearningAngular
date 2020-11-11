@@ -83,6 +83,13 @@ export class ContentListComponent implements OnInit {
 
   }
 
+  addContentToList(newContentFromChild: Content): void {
+    newContentFromChild.id = this.contentList.length
+    this.contentList.push(newContentFromChild);
+    //clone the array
+    this.contentList = Object.assign([], this.contentList);
+  }
+
   ngOnInit(): void {
   }
 

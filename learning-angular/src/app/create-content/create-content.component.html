@@ -1,1 +1,10 @@
-<p>create-content works!</p>
+Title: <input [(ngModel)]="newContent.title" /><br />
+Type: <input [(ngModel)]="newContent.type" /><br />
+Author: <input [(ngModel)]="newContent.author" /><br />
+Tags: <input [(ngModel)]="newContent.tags[0]" /><br />
+Body: <input [(ngModel)]="newContent.body" /><br />
+Image url: <input [(ngModel)]="newContent.imgUrl" /><br /><br />
+<button (click)="addContent()">Add Content!</button>
+<p *ngIf="emptyTitle">Title field is required</p>
+<p *ngIf="emptyAuthor">Author field is required</p>
+<p *ngIf="emptyBody">Body field is required</p>
