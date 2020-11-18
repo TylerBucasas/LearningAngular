@@ -10,6 +10,7 @@ import { FindContentWithTitlePipe } from './find-content-with-title.pipe';
 import { HoverStyleDirective } from './hover-style.directive';
 import { HoverCardDirective } from './hover-card.directive';
 import { CreateContentComponent } from './create-content/create-content.component';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CreateContentComponent } from './create-content/create-content.componen
     FindContentWithTitlePipe,
     HoverStyleDirective,
     HoverCardDirective,
-    CreateContentComponent
+    CreateContentComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
