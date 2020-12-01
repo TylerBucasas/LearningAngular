@@ -1,44 +1,14 @@
 :host{
     
-    width: 900px;
+    width: 500px;
     display: block;
     margin: 10px auto;
 }
 
 
-:host.item-Canadian{
-    border: 3px solid red;
-}
-
-:host.item-International{
-    border: 3px solid greenyellow;
-}
-:host.found_true{
-    background-color: hotpink;
-}
-.left, .right{
-    display: inline-block;
-    width: 45%;
-    position: relative;
-    padding: 10px 15px;
-}
-
-.title{
-    text-align: center;
-}
-.tags{
-    text-align: center;
-}
-
-.type{
-    text-align: center;
-}
-
-img{
-    max-width: 100%;
-}
-
-.card{
-    // clear: both;
-}
-
+  
+  .example-header-image {
+    background-image: url("https://www.computerhope.com/jargon/g/guest-user.jpg");
+    background-size: cover;
+  }
+  

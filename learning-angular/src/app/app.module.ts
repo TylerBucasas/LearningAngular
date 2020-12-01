@@ -23,6 +23,8 @@ import{ MatButtonModule } from '@angular/material/button';
 import{ MatInputModule } from '@angular/material/input';
 import{ MatDialogModule } from '@angular/material/dialog';
 
+import{ MatCardModule } from '@angular/material/card';
+
 
 @NgModule({
   declarations: [
@@ -49,7 +51,8 @@ import{ MatDialogModule } from '@angular/material/dialog';
     MatSliderModule,
     MatButtonModule,
     MatInputModule,
-    MatDialogModule
+    MatDialogModule,
+    MatCardModule
   ],
   providers: [],
   entryComponents: [AddContentDialog],

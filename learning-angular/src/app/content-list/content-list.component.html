@@ -5,7 +5,7 @@
 </div>
 
 
-<app-content-card *ngFor ="let contentIndividual of contentList; first as isFirst; last as isLast" appHoverCard [firstOrLast] = "isFirst || isLast"  class="item-{{contentIndividual.type}} found_{{contentIndividual.found}}" [content]="contentIndividual" (click)= "onSelect(contentIndividual)">
+<app-content-card *ngFor ="let contentIndividual of contentList;" appHoverCard  class="item-{{contentIndividual.type}} found_{{contentIndividual.found}}" [content]="contentIndividual" (click)= "onSelect(contentIndividual)">
     {{ contentIndividual }}
 </app-content-card>
 
