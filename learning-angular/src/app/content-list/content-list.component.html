@@ -1,6 +1,10 @@
 
-<input #titleSearch placeholder="search by title">
-<button (click) = "performSearch(titleSearch.value)">Search</button>
+<div class="createContentContainer">
+    <app-create-component (newContentEvent)="addContentToList($event)" (updateContentEvent)="updateTheList($event)">
+    </app-create-component>
+</div>
+
+
 <app-content-card *ngFor ="let contentIndividual of contentList; first as isFirst; last as isLast" appHoverCard [firstOrLast] = "isFirst || isLast"  class="item-{{contentIndividual.type}} found_{{contentIndividual.found}}" [content]="contentIndividual" (click)= "onSelect(contentIndividual)">
     {{ contentIndividual }}
 </app-content-card>
