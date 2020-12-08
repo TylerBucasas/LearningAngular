@@ -10,6 +10,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ContentService {
+  
 
   constructor(private http: HttpClient, private messageService: MessageService) { }
   private httpOptions = {
@@ -19,6 +20,9 @@ export class ContentService {
     })
   };
 
+  getContent(id: number): Observable<Content> {
+    return this.http.get<Content>('api/tyler/' + id);
+  }
 
   getContents(): Observable<Content[]> {
     return this.http.get<Content[]>('api/tyler');
